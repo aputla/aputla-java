@@ -1,0 +1,18 @@
+Exiting with throwable: java.lang.ArrayIndexOutOfBoundsException: 52264
+java.lang.ArrayIndexOutOfBoundsException: 52264
+        at org.springframework.internal.asm.ClassReader.readClass(Unknown Source)
+        at org.springframework.internal.asm.ClassReader.accept(Unknown Source)
+        at org.springframework.internal.asm.ClassReader.accept(Unknown Source)
+        at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:59)
+        at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:80)
+        at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:101)
+        at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:76)
+        at org.springframework.context.annotation.ConfigurationClassUtils.checkConfigurationClassCandidate(ConfigurationClassUtils.java:70)
+        at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:257)
+        at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:227)
+        at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:623)
+        at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+        at org.springframework.coral.CoralApplicationContext.refresh(CoralApplicationContext.java:203)
+        at com.amazon.coral.spring.Launcher.<init>(Launcher.java:119)
+        at com.amazon.coral.spring.Launcher.main(Launcher.java:72)
+
