@@ -1,4 +1,4 @@
-package lava.io.buffered_reader;
+package lava.io.buffered_writer;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
