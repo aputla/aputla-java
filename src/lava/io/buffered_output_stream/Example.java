@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Example {
     public static void main(String[] args) {
-        try (BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream("textfile.txt"))) {
+        try (BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream("/home/aputla/tmp/textfile.txt"))) {
             stream.write("hello world".getBytes());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
